@@ -59,3 +59,23 @@ https://github.com/lucass333/projetocomp
 Editor 
 
 Pycharm community
+
+
+
+
+
+
+Algoritmo:
+-Usar um filtro pra selecionar os filmes mais relevantes
+-Explicar a ideia para recomendar a partir de mais de um filme
+
+Backend:
+-Criar classe das pessoas para guardar o registro dos filmes
+-Implentar o link do trailer no youtube para o filme melhor recomendado
+-Tentar implementar imagem do cartaz do filme(Google images)***
+-Alinhar com a parte do Frontend
+-Tentar implementar sistema de busca
+
+Frontend:
+-Alinhar com a parte do Backend
+-Fazer o design
