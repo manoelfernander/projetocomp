@@ -1,0 +1,46 @@
+                def comandotrailer(filme):
+                    ''''''
+                    nomefilme = listauser.filmes_recomendados[filme].replace(' ', '+') + '+movie+trailer'
+                    html = urllib.request.urlopen('https://www.youtube.com/results?search_query=' + nomefilme)
+                    video_ids = re.findall(r'watch\?v=(\S{11})', html.read().decode())
+                    webbrowser.open_new(('https://www.youtube.com/watch?v=' + video_ids[0]))
+
+                recomendado1 = Label(tela3,text=str.format('{}. {}',1,listauser.filmes_recomendados[0]),font='Britannic 12',bg='black',fg='white',cursor='hand2')
+                recomendado1.place(x=l /2+200,y=h/2-100,anchor='center')
+                recomendado1.bind("<Button-1>",lambda e: comandotrailer(0))
+
+                recomendado2 = Label(tela3, text=str.format('{}. {}', 2, listauser.filmes_recomendados[1]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado2.place(x=l / 2 + 200, y=h / 2 - 100 + 1 * 30, anchor='center')
+                recomendado2.bind("<Button-1>", lambda e: comandotrailer(1))
+
+                recomendado3 = Label(tela3, text=str.format('{}. {}', 3, listauser.filmes_recomendados[2]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado3.place(x=l / 2 + 200, y=h / 2 - 100 +2 * 30, anchor='center')
+                recomendado3.bind("<Button-1>", lambda e: comandotrailer(2))
+
+                recomendado4 = Label(tela3, text=str.format('{}. {}', 4, listauser.filmes_recomendados[3]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado4.place(x=l / 2 + 200, y=h / 2 - 100 + 3 * 30, anchor='center')
+                recomendado4.bind("<Button-1>", lambda e: comandotrailer(3))
+
+                recomendado5 = Label(tela3, text=str.format('{}. {}', 5, listauser.filmes_recomendados[4]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado5.place(x=l / 2 + 200, y=h / 2 - 100 + 4 * 30, anchor='center')
+                recomendado5.bind("<Button-1>", lambda e: comandotrailer(4))
+
+                recomendado6 = Label(tela3, text=str.format('{}. {}', 6, listauser.filmes_recomendados[5]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado6.place(x=l / 2 + 200, y=h / 2 - 100 + 5 * 30, anchor='center')
+                recomendado6.bind("<Button-1>", lambda e: comandotrailer(5))
+
+                recomendado7 = Label(tela3, text=str.format('{}. {}', 7, listauser.filmes_recomendados[6]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado7.place(x=l / 2 + 200, y=h / 2 - 100 + 6 * 30, anchor='center')
+                recomendado7.bind("<Button-1>", lambda e: comandotrailer(6))
+
+                recomendado8 = Label(tela3, text=str.format('{}. {}', 8, listauser.filmes_recomendados[7]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado8.place(x=l / 2 + 200, y=h / 2 - 100 + 7 * 30, anchor='center')
+                recomendado8.bind("<Button-1>", lambda e: comandotrailer(7))
+
+                recomendado9 = Label(tela3, text=str.format('{}. {}', 9, listauser.filmes_recomendados[8]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado9.place(x=l / 2 + 200, y=h / 2 - 100 + 8 * 30, anchor='center')
+                recomendado9.bind("<Button-1>", lambda e: comandotrailer(8))
+
+                recomendado10 = Label(tela3, text=str.format('{}. {}', 10, listauser.filmes_recomendados[9]),font='Britannic 12', bg='black', fg='white', cursor='hand2')
+                recomendado10.place(x=l / 2 + 200, y=h / 2 - 100 + 9 * 30, anchor='center')
+                recomendado10.bind("<Button-1>", lambda e: comandotrailer(9))
