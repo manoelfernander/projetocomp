@@ -1,0 +1,5 @@
+globals()["recomendado" + str(filme + 1)] = Label(tela3,text=str.format('{}. {}',filme+1,listauser.filmes_recomendados[filme]),font='Britannic 12',bg='black',fg='white',cursor='hand2')
+                            
+                    #recomendado = 
+                    globals()["recomendado" + str(filme + 1)].place(x=l /2+200,y=h/2-100+filme*30,anchor='center')
+                    globals()["recomendado" + str(filme + 1)].bind("<Button-1>",comandotrailer)
