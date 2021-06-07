@@ -1,0 +1,12 @@
+
+                for filme in range(len(listauser.filmes_recomendados)):
+                    def comandotrailer(event):
+                        ''''''
+                        nomefilme = listauser.filmes_recomendados[filme].replace(' ', '+') + '+movie+trailer'
+                        html = urllib.request.urlopen('https://www.youtube.com/results?search_query=' + nomefilme)
+                        video_ids = re.findall(r'watch\?v=(\S{11})', html.read().decode())
+                        webbrowser.open_new(event.widget.cget('https://www.youtube.com/watch?v=' + video_ids[nomefilme]))
+
+                    recomendado = Label(tela3,text=str.format('{}. {}',filme+1,listauser.filmes_recomendados[filme]),font='Britannic 12',bg='black',fg='white',cursor='hand2')
+                    recomendado.place(x=l /2+200,y=h/2-100+filme*30,anchor='center')
+                    recomendado.bind("<Button-1>",comandotrailer)
